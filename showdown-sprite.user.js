@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Pokémon Showdown User Sprite
 // @namespace    https://github.com/thecalys/showdown-user-pic
-// @version      0.0.1
+// @version      1.0.0-beta
 // @description  Changes your Pokémon Showdown user sprite to a custom (pre-fixed) one
 // @author       thecalys
 // @license      MIT
