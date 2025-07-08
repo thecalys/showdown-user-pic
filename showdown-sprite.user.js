@@ -6,19 +6,20 @@
 // @author       thecalys
 // @license      MIT
 // @match        https://*.pokemonshowdown.com/*
-// @run-at       document-end
+// @run-at       document-start
 // @icon         https://icons.duckduckgo.com/ip2/joanwestenberg.com.ico
 // @grant        none
 // ==/UserScript==
 
 (async function () {
   "use strict";
-
+  console.log(`${window.customSprite.LoggerPrefix} user script has been initiated.`);
+  
   // TODO: Allow users to upload their own sprite(s)
   const userSpriteURL =
     "https://play.pokemonshowdown.com/sprites/trainers/theroyal.png";
 
-  const userSpriteSelector = ".trainersprite.yours";
+  const userSpriteSelector = ".userdetails > img";
   let userSpriteElem = document.querySelector(userSpriteSelector);
   const observer = new MutationObserver((mutations) => {
     if (document.querySelector(userSpriteSelector)) {
@@ -44,8 +45,8 @@
 })();
 
 window.customSprite = { DEBUG: false, Logger: undefined };
+window.customSprite.LoggerPrefix = "[ShowdownCustomSprite]"
 window.customSprite.Logger = (style = "neutral", content) => {
-  const prefix = "[ShowdownCustomSprite]";
   let styles = {
     error: "color: crimson; font-weight: bold",
     success: "color: limegreen; font-weight: bold",
