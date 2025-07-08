@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         Pokémon Showdown User Sprite
 // @namespace    https://github.com/thecalys/showdown-user-pic
-// @version      1.0.0
-// @description  try to take over the world!
+// @version      0.0.1
+// @description  Changes your Pokémon Showdown user sprite to a custom (pre-fixed) one
 // @author       thecalys
 // @license      MIT
 // @match        https://*.pokemonshowdown.com/*
-// @run-at document-end
+// @run-at       document-end
 // @icon         https://icons.duckduckgo.com/ip2/joanwestenberg.com.ico
 // @grant        none
 // ==/UserScript==
